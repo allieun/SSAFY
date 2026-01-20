@@ -1,8 +1,3 @@
-d = {
-    'name' : 'ABC', 
-}
+print('test')
 
-d['wish-list'] = ['book']
-d['wish-list'].append('cookie')
-
-print(d)
+print('why is it me that is having an error all the time...')
