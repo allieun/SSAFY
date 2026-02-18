@@ -1,1 +1,0 @@
-{"name":"Local: 파스칼의삼각형","url":"c:\\Users\\twili\\OneDrive\\바탕 화면\\SSAFY\\February\\0209\\파스칼의삼각형.py","tests":[{"id":1771397593484,"input":"1\n4","output":"#1\n1\n1 1\n1 2 1\n1 3 3 1"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\twili\\OneDrive\\바탕 화면\\SSAFY\\February\\0209\\파스칼의삼각형.py","group":"local","local":true}
