@@ -9,18 +9,18 @@ BFS로 푸는걸 추천함 (제미나이 추천)
 
 from collections import deque
 
-def bfs(s, g, graph):
-    q = deque([s])
-    visited[s] = 1
+def bfs(s, g, graph):    # bfs에 시작점과 도달점, 그리고 그래프에 대한 정보를 넣고 시작
+    q = deque([s])       # 큐에 시작점을 넣고 시작
+    visited[s] = 1       # 시작점은 방문처리
     while q:
-        current = q.popleft()
-        if current == g:
-            return visited[current]-1
-        for next_node in graph[current]:
-            if not visited[next_node]:
-                visited[next_node] = visited[current] +1
-                q.append(next_node)
-    return 0
+        current = q.popleft()   # FIFO 규칙에 따라 현재 지점을 꺼냄
+        if current == g:        # 현재 위치가 목표지점일 때는 1을 뺀다(시작점의 거리를 1로 잡아서)
+            return visited[current]-1    
+        for next_node in graph[current]:   # 현재 위치에서 이동 가능한 다음 노드에 대해서는
+            if not visited[next_node]:     # 아직 방문하지 않았다면
+                visited[next_node] = visited[current] +1    # 
+                q.append(next_node)      # 큐에 넣어 다음에 방문해서 탐색할 수 있게 조치
+    return 0                      # 없다면 0
 
 
 t = int(input())
