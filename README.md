@@ -1,2 +1,53 @@
-# SSAFY_Practice
-SSAFY Code Solving Project
+# 📘 SSAFY Study Log (Algorithm & AI)
+
+SSAFY 교육 과정에서 학습한 개념과 문제 해결 과정을 기록한 저장소입니다.  
+단순 문제 풀이가 아닌, 학습 과정과 사고 흐름을 정리하는 것을 목표로 합니다.
+
+---
+
+## 📂 What I Record
+
+### 🔹 Concept Learning
+- 자료구조 / 알고리즘 개념 정리
+- AI 및 데이터 기초 개념
+
+### 🔹 Problem Solving (Algorithm)
+- 수업 중 다룬 문제 (SWEA 기준)
+- 핵심 풀이 과정 중심 기록
+
+### 🔹 Daily Learning Log
+- 하루 학습 내용 정리
+- 어려웠던 점 & 추가 공부 계획
+
+---
+
+## 📁 Structure
+
+
+📁 Month
+
+    📁 Week (주차별 배운 내용 혹은 문제 풀이)
+    📁 AI (머신러닝, 딥러닝 학습과 관련된 개념 정리 / 주피터 노트북 실습)
+
+---
+
+## ✍️ Focus
+
+- “왜 이렇게 풀었는지” 기록
+- 개념 → 문제 적용 연결
+- 시행착오 과정 정리
+
+---
+
+## 🚀 Goal
+
+- 문제 해결 능력 향상
+- AI & 데이터 기반 사고력 강화
+- 학습 과정을 통한 성장 기록
+
+---
+
+## 📌 Note
+
+- SSAFY 제공 원본 파일은 포함하지 않습니다.
+- 개인 학습 및 정리 내용만 업로드합니다.
