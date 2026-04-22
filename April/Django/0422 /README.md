@@ -49,7 +49,7 @@ hello,
 - 로그아웃 / 회원탈퇴는 POST 방식
 - UI는 로그인 상태에 따라 분기
 ### ⚠️ 트러블 슈팅
-#### ❗ User.object 오류
+####  ❗ User.object 오류
 ```python
 User.object.all()
 ```
