@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+  <link rel="stylesheet" href="{% static 'stylesheets/style.css' %}">
+  <img src="{% static 'logo.png' %}" alt="logo" class="logo">
+  <h1>메인 페이지</h1>
+
+    {% if user.is_authenticated %}
+        <p>Welcome, {{ user.username }}!</p>
+
+        <form action="{% url 'accounts:logout' %}" method="POST">
+            {% csrf_token %}
+            <input type="submit" value="Logout">
+        </form>
+        <form action="{% url "accounts:delete" %}" method="POST">
+            {% csrf_token %}
+            <a href="{% url "accounts:update" %}">
+                <button type="button">회원정보 수정</button>
+            </a>
+            <input type="submit" value="회원탈퇴">
+        </form>
+        
+        <a href="{% url 'articles:create' %}">CREATE</a>
+    {% else %}
+        <a href="{% url 'accounts:login' %}">Login</a>
+        <a href="{% url "accounts:signup" %}">회원가입</a><br>
+
+    {% endif %}
+
+  <hr>
+
+  {% for article in articles %}
+    <div>
+      <p>글 번호: {{ article.pk }}</p>
+      <p>
+        글 제목: <a href="{% url 'articles:detail' article.pk %}">{{ article.title }}</a>
+      </p>
+    </div>
+    <hr>
+  {% endfor %}
+{% endblock content %}

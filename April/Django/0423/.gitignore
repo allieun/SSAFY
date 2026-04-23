@@ -1,0 +1,17 @@
+### Python & Django Core ###
+__pycache__/          # 컴파일된 파이썬 파일 (속도 저하 및 충돌 방지)
+*.py[cod]
+*$py.class
+*.log                 # 로그 파일
+db.sqlite3            # 로컬 데이터베이스 (배포 시 서버 DB와 충돌 방지)
+db.sqlite3-journal
+media                 # 사용자가 업로드한 파일 (용량 및 보안 문제)
+local_settings.py     # 로컬 전용 설정 (비밀번호 등 포함 가능성)
+.env                  # 환경 변수 설정 파일 (SECRET_KEY 등 보안 필수)
+
+### Virtual Environments ###
+venv/
+.venv/
+env/
+ENV/
+pyvenv.cfg            # 가상환경 설정 파일
